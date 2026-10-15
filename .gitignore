@@ -1,0 +1,13 @@
+.venv/
+.venv-project/
+*.egg-info/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+data/raw/
+data/downloads/
+data/fma_small/
+data/fma_metadata/
+data/fma_labeled/
+data/processed/
+artifacts/

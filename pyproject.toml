@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audio-genre-classifier"
+version = "0.1.0"
+description = "Train a 2D CNN to classify music genres from Mel-spectrograms."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "librosa>=0.10.2",
+    "numpy>=1.26",
+    "torch>=2.2",
+]
+
+[project.scripts]
+genre-classifier = "genre_classifier.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
